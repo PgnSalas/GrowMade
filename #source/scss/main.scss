@@ -1,0 +1,390 @@
+@import "nullmain.scss";
+
+body {
+    font-family: 'Roboto';
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper  {
+    display: flex;
+    justify-content: space-between;
+    width: 1340px;
+    margin: 0 auto;
+}
+
+
+.link-nav {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+div a:first-child {
+    // margin-right: 15px;
+}
+
+.header {
+    background: url(../../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 504px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+@mixin FzLh ($Fz, $Lh) {
+    font-size: $Fz;
+    line-height: $Lh;
+}
+
+@mixin FzLhLs ($Fz, $Lh, $Ls) {
+    font-size: $Fz;
+    line-height: $Lh;
+    letter-spacing: $Ls;
+}
+.conteiner-header {
+    text-align: center;
+    padding-top: 188px;
+}
+
+.conteiner-header {
+   & h2 {
+        @include  FzLh (43px, 46px);
+        margin-bottom: 12px;
+        font-weight: normal;
+    }
+    & p {
+        @include  FzLh (15px, 18px);
+        margin-bottom: 28px;
+    }
+    & a {
+        @include  FzLhLs (13px, 15px, 1.4px);
+        color: #fff;
+        text-transform: uppercase;
+    }
+} 
+
+.section-design {
+    text-align: center;
+
+    & h2 {
+        @include FzLh (43px, 58px);
+        font-weight: normal;
+        margin-bottom: 23px;
+    }
+    & p {
+        @include FzLhLs (14px, 24px, 0.8px);
+        color: #A0A0A0;
+        margin-bottom: 26px;
+    }
+    & a {
+        @include FzLhLs (13px, 21px, 1.4px);
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 81px;
+        display: inline-block;
+    }
+}
+
+.conteiner-design {
+    width: 1340px;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+
+.wrapper-design {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-design {
+    text-align: center;
+    & h3 {
+        @include FzLh (27px, 30px);
+        font-weight: normal;
+        margin: 48px 0px 23px 0px;
+    }
+    & a {
+        @include FzLhLs (13px, 15px, 1.4px);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.section-products {
+    padding-bottom: 95px;
+}
+.conteiner-product {
+    width: 1340px;
+    margin: 0 auto;
+    text-align: center;
+    & h2 {
+        @include  FzLh (33px, 36px);
+        margin-bottom: 16px;
+    }
+    & p {
+        @include  FzLhLs (15px, 18px, 0.8px);
+        color: #A0A0A0;
+    }
+ 
+}
+
+
+.block-img {
+    margin: 52px 0px 24px 0px;
+    & span {
+        margin-right: 16px;
+    }
+}
+
+.block-img span:last-child {
+    margin: 0;
+}
+
+.conteiner-products {
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.wrapper-prod {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.block-product {
+    p {   
+        color: #A0A0A0;
+        margin-top: 23px;
+        & a {
+            @include FzLhLs (13px, 21px, 0.7px);
+            color: #A0A0A0;
+        }
+    }
+}
+
+.section-home {
+    background: url(../../img/home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 174px 0px 185px 0px;
+    & h2 {
+        @include FzLh (66px, 70px);
+        margin-bottom:  14px;
+        color: #fff;
+    }
+    & p {
+        @include FzLhLs (14px, 16px, 0.8px);
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    & a {
+        @include FzLhLs (13px, 15px, 1.4px);
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.section-way {
+    width: 1052px;
+    margin: 0 auto;
+    padding: 116px 0px 38px 0px;
+    text-align: center;
+    & h2 {
+        @include FzLh (34px, 36px);
+        margin-bottom: 23px;
+    }
+    & p {
+        @include FzLhLs (16px, 24px, 0.8px);
+        color: #A0A0A0;
+        margin-bottom: 23px;
+    }
+}
+
+.section-work {
+    width: 1340px;
+    margin: 0 auto;
+    padding-bottom: 124px;
+    text-align: center;
+    & h2 {
+        @include FzLh (34px, 36px);
+        margin-bottom: 23px;
+    }
+    & p {
+        @include FzLhLs (16px, 24px, 0.8px);
+        color: #A0A0A0;
+        margin-bottom: 79px;
+    }
+}
+
+// .wrapper-work {
+//     display: flex;
+//     justify-content: space-around;   
+// }
+
+
+.conteiner-work {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    img {
+       display: inline-block;
+       margin-right: 25px;
+       &:last-child {
+           margin: 0;
+       }
+    }
+}
+
+.conteiner-work_2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    img {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+            margin: 0;
+        }
+     }
+}
+
+.conteiner-work_3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    img {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+            margin: 0;
+        }
+     }
+}
+
+.conteiner-work_3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    img {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+            margin: 0;
+        }
+     }
+
+}
+
+.conteiner-work_4 {
+    display: flex;
+    justify-content: space-around;
+    img {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+            margin: 0;
+        }
+     }
+}
+
+.section-hope {
+    text-align: center;
+    padding-bottom: 39px;
+    & h2 {
+        @include FzLh (34px, 36px);
+        margin-bottom: 44px;
+    }
+    & p {
+        @include FzLhLs (13px, 21px, 1.4px); 
+        text-transform: uppercase;
+        margin-bottom: 121px;
+    }
+}
+
+.conteiner-hope {
+    width: 1340px;
+    min-height: 404px;
+    margin: 0 auto;
+    background: #9AA8B1;
+    background-image: url(../../img/LOGO.png);
+    background-repeat: no-repeat;
+    background-position: 650px 120px;
+    color: #fff;
+    padding-top: 178px;
+    & h2 {
+        margin-bottom: 23px;
+        @include FzLh (43px, 58px);
+    }
+    & p {
+        @include FzLhLs (14px, 24px, 0.8px);
+    }
+}
+
+.footer {
+    padding: 77px 0px 28px 50px;
+    background: #F9F9F9;
+    background:  url(../../img/линиия.png) 232px 279px no-repeat ,url(../../img/Frame.png) 1308px 0px no-repeat;
+}
+
+.wrapper-footer {
+    display: flex;
+}
+
+.conteiner-footer {
+    margin-right: 35px;
+    & ul {
+        list-style: none;
+    }
+    & ul > li {
+        @include FzLh (22px, 24px);
+        padding-bottom: 16px;
+    }
+    & ul > li:last-child {
+        padding-bottom: 0px;
+    }
+    & ul > li > a {
+        color: #000;
+    } 
+}
+
+.conteiner-footer_2 {
+    & h4 {
+        @include FzLh (22px, 24px);
+        margin-bottom: 23px;
+    }
+    & p {
+        @include FzLhLs (14px, 16px, 0.8px);    
+        color: #A0A0A0;
+    }
+}
+
+.footer-last {
+    width: 1365px;
+    margin: 0 auto;
+    margin-top: 84px;
+    & ul {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+    }
+    & ul > li {
+        @include FzLhLs (13px, 15px, 0.8px);
+        padding-right: 38px;
+        color: #707A7F;
+    }
+    & ul > li:last-child {
+        @include FzLhLs (13px, 15px, 0.8px);
+        color: #000;
+    }
+}
